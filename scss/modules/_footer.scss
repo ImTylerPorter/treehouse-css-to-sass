@@ -1,0 +1,70 @@
+/*-----------------------------------------------
+  Footer
+------------------------------------------------*/
+
+footer {
+	.wrapper-skinny {
+		@include mq(small) {
+			margin-bottom: 5em;
+		}
+	}
+	h2 {
+		font-size: .9em;
+		margin: 3em 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+.footer-bottom {
+	.wrapper {
+		border-top: 1px solid $light-grey;
+	}
+	h4 {
+		color: $dark-grey;
+		float: left;
+		@include mq(small) {
+			margin-bottom: 5em;
+		}
+		@include mq(medium) {
+			margin-top: 3.5%;
+		}
+	}
+}
+.nav-foot {
+  display: none;
+  @include mq(small){
+  	margin: 2.5% 0 !important;
+  }
+  @include mq(medium){
+  	float: right;
+  	font-size: .9em;
+    font-weight: bold;
+    display: block;
+  }
+  li {
+  	@include mq(medium){
+  		margin-left: 20px !important;
+  	}
+  }
+}
+
+.contact-desc {
+	@include mq(medium) {
+    	font-size: 1.4em;
+	}
+	@include mq(large){
+		margin-bottom: 2.8em;
+	}
+}
+
+.top {
+  float: right;
+  font-weight: bold;
+  margin-top: 3.5%;
+  text-transform: uppercase;
+  color: $dark-grey;
+  @include mq(medium) {
+  	display: none;
+  }
+}

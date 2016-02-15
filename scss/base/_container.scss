@@ -1,0 +1,24 @@
+/*-----------------------------------------------
+  Container
+------------------------------------------------*/
+
+.wrapper, .wrapper-skinny{
+  width: 90%;
+  margin:0 auto;
+}
+.wrapper-skinny {
+	@include mq(medium){
+		width: 80%;
+    	margin: 0 auto;
+	}
+	@include mq(large){
+		width: 50%;
+    	margin: 0 auto;
+	}
+}
+.white{
+    background: $white;
+    @include mq(large){
+    	background: transparent;
+    }
+}

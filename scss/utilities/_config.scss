@@ -1,0 +1,44 @@
+/*-----------------------------------------------
+  Global Config
+------------------------------------------------*/
+
+// Font Stacks
+
+$font-family-primary    :   'Roboto', sans-serif;
+$font-family-secondary  :   'Raleway', sans-serif;
+
+// Base Colors
+
+$white		:		#ffffff;
+$black		:		#000000;
+$grey		:		#7f7f7f;
+
+$light-grey	:		lighten($grey, 43%);
+$dark-grey  :		darken($grey, 20.75%);
+$off-white	:		#fafafa;
+$lime-green	:		#84C441;
+
+// Color Usage
+
+$color-primary	:	$grey;
+$color-accent	:	$lime-green;
+
+// Text
+
+$font-size 		 : 16px;
+$letter-space    : 1px;
+
+// Border-radius 
+
+$border-radius    : 1em;
+
+// Transitions
+
+$trns-duration     : .5s;
+
+// Breakpoints 
+
+$brkpoint-sm	: 320px;
+$brkpoint-md	: 768px;
+$brkpoint-lg	: 1100px;
+

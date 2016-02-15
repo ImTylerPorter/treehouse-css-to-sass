@@ -1,0 +1,61 @@
+/*-----------------------------------------------
+  Navigation
+------------------------------------------------*/
+
+.main-nav {
+	@extend %center-align;
+	width: 100%;
+	display: inline-block;
+	h1 {
+		@include mq(medium){
+			margin: 1.9em 0 1em;
+    		font-size: 1.7em;
+		}
+		@include mq(large){
+			float: left;
+    		margin-top: 6%
+		}
+	}
+}
+
+.nav {
+	display: block;
+	@include mq(medium){
+		margin-top: 3.2%;
+	}
+	@include mq(large){
+		float: right;
+    	margin-top: 6.2%;
+	}
+}
+li {
+	font-family: $font-family-primary;
+	text-transform: uppercase;
+	margin-left: 38px; 
+	font-weight: bold;
+	@include mq(small) {
+		display: block;
+    	background: $white;
+    	margin: 0.4em auto;
+   		padding: 0.8em 0;
+	}
+	@include mq(medium){
+		font-size: .95em;
+    	display: inline-block;
+    	background: transparent;
+    	margin: 0 0 0 38px;
+	}
+	@include mq(large){
+		margin-left: 38px; 
+    	font-weight: bold; 
+	}
+	&:nth-child(1){
+		@include mq(medium){
+			margin: 0;
+		}
+	}
+	a {
+		color: $dark-grey ;
+		font-family: $font-family-primary;
+	}
+}

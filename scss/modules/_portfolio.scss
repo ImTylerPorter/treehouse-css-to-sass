@@ -1,0 +1,49 @@
+/*-----------------------------------------------
+  Navigation
+------------------------------------------------*/
+
+figure {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin: 0 auto 2em;
+  @include mq(medium){
+    width: 49.3%;
+    margin-right: .3em;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+  @include mq(large){
+    width: 30%;
+    margin: 1em .5em;
+  }
+  &:nth-child(3), &:nth-child(5), &:nth-child(7){
+    margin-right: 0;
+  }
+  img {
+    transition: all $trns-duration ease-in-out;
+    &:hover {
+      transform: scale(1) rotate(-2deg);
+      border-radius: $border-radius;
+    }
+  }
+}
+
+figcaption {
+  line-height: 1.4em;
+  width: 91%;
+  margin: 0 auto;
+  @include mq(small) {
+    font-size: .9em;
+    line-height: 1.5;
+    font-size: 1.1em;
+  }
+  h4 {
+    color: $dark-grey;
+    @inclue mq(small) {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+}
