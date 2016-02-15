@@ -1,0 +1,326 @@
+/*-----------------------------------------------
+  GLOBAL STYLES
+------------------------------------------------*/
+
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;  
+  color: #7f7f7f;
+  background: #fafafa;
+}
+h1,h2,h3,h4 {
+  font-family: 'Roboto', sans-serif;
+  color: #4a4a4a;
+}
+p {
+  font-size: 1.4em;
+}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #7f7f7f;
+}
+a:hover {
+  color: #84C441;
+}
+.wrapper, .wrapper-skinny{
+  width: 90%;
+  margin:0 auto;
+}
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.center {
+  text-align: center;
+}
+/*-----------------------------------------------
+  Navigation
+------------------------------------------------*/
+.main-nav{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.nav{
+  display: block;
+}
+.nav li {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 38px; 
+  font-weight: bold; 
+}
+.nav li a{
+  color: #4a4a4a;
+}
+.name li a{
+  color: #4a4a4a;
+  font-family: 'Roboto', sans-serif;  
+}
+
+/*-----------------------------------------------
+  MAIN
+------------------------------------------------*/
+.profile-image {
+  background: #ededed;
+}
+.profile-desc {
+  margin-top: 0;
+}
+.portfolio {
+  background: white;
+  text-align: center;
+  padding-bottom: 3.5em;
+}
+.portfolio h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+figure {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin: 0 auto 2em;
+}
+figure img {
+  transition: all .5s ease-in-out;
+}
+figure img:hover {
+  transform: scale(1) rotate(-2deg);
+  border-radius: 1em;
+}
+
+figcaption h4 {
+  color: #626262;
+}
+figcaption {
+  line-height: 1.4em;
+  width: 91%;
+  margin: 0 auto;
+}
+
+/*-----------------------------------------------
+  Footer
+------------------------------------------------*/
+ 
+.footer-bottom .wrapper {
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-bottom h4 {
+  color: #4a4a4a;
+  float: left;
+}
+.nav-foot {
+  display: none;
+}
+.top {
+  float: right;
+  font-weight: bold;
+  margin-top: 3.5%;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
+
+/*-----------------------------------------------
+  Media Queries
+------------------------------------------------*/
+
+@media (min-width: 320px) {
+
+  .nav li {
+    display: block;
+    background: white;
+    margin: 0.4em auto;
+    padding: 0.8em 0;
+  }
+  p {
+    font-size: 1.2em;
+    line-height: 1.4;
+  }
+  header {
+    padding: 10% 0;
+    text-align: center;
+  }
+  header img {
+    width: 70%;
+  }
+  .profile-desc {
+    margin-top: 1em;
+    font-size: 1.1em;
+    line-height: 1.3;
+  }
+  .white{
+    background: white;
+  }
+  figcaption h4{
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  figcaption {
+    font-size: .9em;
+    line-height: 1.5;
+    font-size: 1.1em;
+  }
+  footer .wrapper-skinny {
+    margin-bottom: 5em;
+  }
+
+  .footer-bottom h4 {
+    margin: 3.5% 0;
+  }
+  .nav-foot {
+    margin: 2.5% 0 !important;
+  }
+  footer h2,
+  .portfolio h2{
+    font-size: .9em;
+    margin: 3em 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+}
+
+
+@media (min-width: 768px) {
+
+  .wrapper-skinny {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main-nav h1 {
+    margin: 1.9em 0 1em;
+    font-size: 1.7em;
+  }
+  .nav {
+    margin-top: 3.2%;
+  }
+  .nav-foot {
+    float: right;
+  }
+  .nav li {
+    font-size: .95em;
+    display: inline-block;
+    background: transparent;
+    margin: 0 0 0 38px;
+  }
+  .nav li:nth-child(1) {
+    margin: 0;
+  }
+  header {
+    padding: 6.5% 0 0;
+    text-align: left;
+    margin-bottom: 3.8em;
+  }
+  .profile-image {
+    float: right;
+    width: 35%;
+  }
+  .profile-desc {
+    float: left;
+    width: 60%;
+    font-size: 1.3em;
+  }
+  figure {
+    width: 49.3%;
+    margin-right: .3em;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+  figure:nth-child(3), figure:nth-child(5), figure:nth-child(7)  {
+    margin-right: 0;
+  }
+
+  .nav-foot{
+    font-size: .9em;
+    font-weight: bold;
+    display: block;
+  }
+  .nav-foot li {
+    margin-left: 20px !important;
+  }
+  .footer-bottom h4 {
+    margin-top: 3.5%;
+  }
+
+  .contact-desc {
+    font-size: 1.4em;
+  }
+
+  .top {
+    display: none;
+  }
+
+
+}
+
+
+@media (min-width: 1024px){
+
+  .wrapper-skinny {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .main-nav h1 {
+    float: left;
+    margin-top: 6%;
+  }
+  .nav {
+    float: right;
+    margin-top: 6.2%;
+  }
+  .nav li {
+    margin-left: 38px; 
+    font-weight: bold; 
+  }
+  header{
+    padding: 2.5% 0 0;
+  }
+  .profile-image {
+    float: right;
+    width: 40%;
+  }
+  .profile-desc {
+    float: left;
+    width: 55%;
+    font-size: 1.3em;
+  }
+  .white{
+    background: transparent;
+  }
+  figure {
+    width: 30%;
+    margin: 1em .5em;
+  }
+  footer .main-nav {
+    min-height: 0;
+  }
+  .contact-desc {
+    margin-bottom: 2.8em;
+  }
+
+
+}
+
+
