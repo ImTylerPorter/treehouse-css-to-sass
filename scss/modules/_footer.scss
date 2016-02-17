@@ -33,9 +33,7 @@ footer {
 }
 .nav-foot {
   display: none;
-  @include mq(small){
-  	margin: 2.5% 0 !important;
-  }
+  margin: 2.5% 0 !important;
   @include mq(medium){
   	float: right;
   	font-size: .9em;
