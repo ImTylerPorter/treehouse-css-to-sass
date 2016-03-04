@@ -4,9 +4,7 @@
 
 footer {
 	.wrapper-skinny {
-		@include mq(small) {
-			margin-bottom: 5em;
-		}
+		margin-bottom: 5em;
 	}
 	h2 {
 		font-size: .9em;
@@ -23,11 +21,10 @@ footer {
 	h4 {
 		color: $dark-grey;
 		float: left;
-		@include mq(small) {
-			margin-bottom: 5em;
-		}
-		@include mq(medium) {
-			margin-top: 3.5%;
+		margin-bottom: 5em;
+		margin-top: 3.5%;
+		@include mq(medium){
+			margin-top: 2.5%;
 		}
 	}
 }
@@ -43,6 +40,7 @@ footer {
   li {
   	@include mq(medium){
   		margin-left: 20px !important;
+  		display: inline-block;
   	}
   }
 }

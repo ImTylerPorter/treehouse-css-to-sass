@@ -34,12 +34,10 @@
 	text-transform: uppercase;
 	margin-left: 38px; 
 	font-weight: bold;
-	@include mq(small) {
-		display: block;
-    	background: $white;
-    	margin: 0.4em auto;
-   		padding: 0.8em 0;
-	}
+	display: block;
+    background: $white;
+    margin: 0.4em auto;
+   	padding: 0.8em 0;
 	@include mq(medium){
 		font-size: .95em;
     	display: inline-block;

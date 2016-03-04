@@ -34,16 +34,12 @@ figcaption {
   line-height: 1.4em;
   width: 91%;
   margin: 0 auto;
-  @include mq(small) {
-    font-size: .9em;
-    line-height: 1.5;
-    font-size: 1.1em;
-  }
+  font-size: .9em;
+  line-height: 1.5;
+  font-size: 1.1em;
   h4 {
     color: $dark-grey;
-    @inclue mq(small) {
-      font-size: 1.2em;
-      font-weight: bold;
-    }
+    font-size: 1.2em;
+    font-weight: bold;
   }
 }

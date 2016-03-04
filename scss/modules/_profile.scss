@@ -14,11 +14,9 @@
 }
 .profile-desc {
   margin-top: 0;
-  @include mq(small) { 
-  	margin-top: 1em;
-    font-size: 1.1em;
-    line-height: 1.3;
-  }
+  margin-top: 1em;
+  font-size: 1.1em;
+  line-height: 1.3;
   @include mq(medium){
     float: left;
     width: 60%;
@@ -45,10 +43,8 @@
 }
 
 header {
-	@include mq(small) {
-		padding: 10% 0;
-    text-align: center;
-	}
+	padding: 10% 0;
+  text-align: center;
   @include mq(medium){
     padding: 6.5% 0 0;
     text-align: left;
@@ -58,8 +54,6 @@ header {
     padding: 2.5% 0 0;
   }
 	img {
-		@include mq(small) {
- 		   width: 70%;
-		}	
+ 		width: 70%;
 	}
 }	
